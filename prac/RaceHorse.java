@@ -3,18 +3,24 @@
  */
 public class RaceHorse extends Horse{
 
-    int races;
+    private int races;
 
 
-    public RaceHorse(){this(3);}
+    public RaceHorse(){this("noName", "noColour", 9999,0);}
 
-    public RaceHorse(int races)
+    RaceHorse(String name, String colour, int birthYear, int races)
     {
         //super calls constructor from parent class
-        super("kkk","ll",1);
+        super(name, colour, birthYear);
         this.races = races;
 
     }
 
+    public int getRaces() {
+        return races;
+    }
 
+    public void setRaces(int races) {
+        this.races = races;
+    }
 }
